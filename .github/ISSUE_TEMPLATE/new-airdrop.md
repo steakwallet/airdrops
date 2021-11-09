@@ -18,3 +18,9 @@ $OSMO
 
 **End Date**
 01/02/2022 (optional)
+
+**Home Page**
+https://osmosis.zone
+
+**Claim Link**
+https://app.osmosis.zone/airdrop
