@@ -59,7 +59,11 @@ export function Email() {
                 </div>
               </form>
               <div className="flex items-center justify-center pt-8">
-                <a href="/" target="_blank" className="text-white underline">
+                <a
+                  href="https://github.com/AlexBHarley/airdrops/issues/new/choose"
+                  target="_blank"
+                  className="text-white underline"
+                >
                   Want to register your airdrop?
                 </a>
               </div>
