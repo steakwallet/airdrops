@@ -107,7 +107,7 @@ export function Table() {
             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
               <div className="py-1">
                 {Object.values(Status).map((s) => (
-                  <Menu.Item onClick={() => setStatus(s)}>
+                  <Menu.Item onClick={() => setStatus(s)} key={s}>
                     {({ active }) => (
                       <a
                         className={classNames(
@@ -173,7 +173,7 @@ export function Table() {
             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
               <div className="py-1">
                 {networks.map((n) => (
-                  <Menu.Item onClick={() => setNetwork(n)}>
+                  <Menu.Item onClick={() => setNetwork(n)} key={n}>
                     {({ active }) => (
                       <a
                         className={classNames(
@@ -295,6 +295,7 @@ export function Table() {
                         <a
                           href={drop.claimLink || drop.homeLink}
                           target="_blank"
+                          rel="noreferrer"
                           className="text-indigo-600 hover:text-indigo-900"
                         >
                           Link

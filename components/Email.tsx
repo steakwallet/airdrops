@@ -33,8 +33,8 @@ export function Email() {
                   Get notified of new airdrops
                 </h2>
                 <p className="mt-6 mx-auto max-w-2xl text-lg text-indigo-200">
-                  Submit your email below and we'll let you know when a new drop
-                  happens
+                  {`Submit your email below and we'll let you know when a new drop
+                  happens`}
                 </p>
               </div>
               <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
@@ -62,6 +62,7 @@ export function Email() {
                 <a
                   href="https://github.com/AlexBHarley/airdrops/issues/new/choose"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-white underline"
                 >
                   Want to register your airdrop?
