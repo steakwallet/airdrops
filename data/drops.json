@@ -1,0 +1,24 @@
+[
+  {
+    "network": "osmosis",
+    "token": "OSMO",
+    "homeLink": "https://osmosis.zone",
+    "startDate": "01-01-2021",
+    "endDate": "01-01-2022"
+  },
+  {
+    "network": "ethereum",
+    "token": "ENS",
+    "homeLink": "https://ens.domains",
+    "claimLink": "https://claim.ens.domains",
+    "startDate": "08-11-2021",
+    "endDate": "01-05-2022"
+  },
+  {
+    "network": "solana",
+    "token": "SUNNY",
+    "homeLink": "https://sunny.ag",
+    "startDate": "08-01-2022",
+    "endDate": "01-02-2022"
+  }
+]
