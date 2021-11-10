@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Image from "next/image";
 import { Menu, Transition } from "@headlessui/react";
 import {
   ArchiveIcon,
@@ -48,7 +49,7 @@ const airdrops = RawAirdrops.map((d) => ({
   status: getStatus(d.startDate, d.endDate),
 })).sort((a, b) => a.startDate?.getTime() - b.startDate?.getTime());
 
-const networks: string[] = [
+const allNetworks: string[] = [
   ...new Set(
     Object.values(airdrops).reduce(
       (accum: string[], drop) => [...accum, drop.network],
@@ -58,7 +59,7 @@ const networks: string[] = [
 ];
 
 export function Table() {
-  const [network, setNetwork] = useState<string | null>(null);
+  const [networks, setNetworks] = useState<string[]>([]);
   const [status, setStatus] = useState([Status.Upcoming, Status.Active]);
 
   const filtered = airdrops.filter((d) => {
@@ -67,11 +68,11 @@ export function Table() {
         return status.includes(d.status);
       },
       () => {
-        if (!network) {
+        if (networks.length === 0) {
           return true;
         }
 
-        return d.network === network;
+        return networks.includes(d.network);
       },
     ];
 
@@ -119,14 +120,12 @@ export function Table() {
                         className={classNames(
                           status.includes(s)
                             ? "bg-gray-100 text-gray-900 cursor-default"
-                            : "text-gray-700 hover:cursor-pointer",
+                            : active
+                            ? "bg-gray-100 text-gray-900 hover:cursor-pointer"
+                            : "text-gray-700",
                           "group flex items-center px-4 py-2 text-sm"
                         )}
                       >
-                        <PencilAltIcon
-                          className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                          aria-hidden="true"
-                        />
                         {capitalise(s)}
                       </a>
                     )}
@@ -159,7 +158,9 @@ export function Table() {
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-              {network ? capitalise(network) : "Network"}
+              {networks.length === 0
+                ? "Network"
+                : networks.map(capitalise).join(", ")}
               <ChevronDownIcon
                 className="-mr-1 ml-2 h-5 w-5"
                 aria-hidden="true"
@@ -178,22 +179,34 @@ export function Table() {
           >
             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
               <div className="py-1">
-                {networks.map((n) => (
-                  <Menu.Item onClick={() => setNetwork(n)} key={n}>
+                {allNetworks.map((n) => (
+                  <Menu.Item
+                    onClick={() =>
+                      setNetworks((old) =>
+                        old.includes(n)
+                          ? old.filter((x) => x !== n)
+                          : [...old, n]
+                      )
+                    }
+                    key={n}
+                  >
                     {({ active }) => (
                       <a
                         className={classNames(
-                          n === network
+                          networks.includes(n)
                             ? "bg-gray-100 text-gray-900 cursor-default"
-                            : "text-gray-700 hover:cursor-pointer",
-                          "group flex items-center px-4 py-2 text-sm"
+                            : active
+                            ? "bg-gray-100 text-gray-900 hover:cursor-pointer"
+                            : "text-gray-700",
+                          "group flex items-center px-4 py-2 text-sm space-x-4"
                         )}
                       >
-                        <PencilAltIcon
-                          className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                          aria-hidden="true"
+                        <Image
+                          src={`/images/${n}.png`}
+                          width={20}
+                          height={20}
                         />
-                        {capitalise(n)}
+                        <span>{capitalise(n)}</span>
                       </a>
                     )}
                   </Menu.Item>
