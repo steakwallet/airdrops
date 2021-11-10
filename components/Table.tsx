@@ -21,19 +21,21 @@ enum Status {
   Active = "active",
   Inactive = "Inactive",
   Upcoming = "Upcoming",
-  All = "All",
 }
 
-const getStatus = (startDate: string, endDate?: string) => {
-  const start = new Date(startDate);
-  const end = endDate ? new Date(endDate) : undefined;
-
-  if (end && end.getTime() < now) {
-    return Status.Inactive;
+const getStatus = (startDate?: string, endDate?: string) => {
+  if (!startDate) {
+    return Status.Upcoming;
   }
 
+  const start = new Date(startDate);
   if (start.getTime() > now) {
     return Status.Upcoming;
+  }
+
+  const end = endDate ? new Date(endDate) : undefined;
+  if (end && end.getTime() < now) {
+    return Status.Inactive;
   }
 
   return Status.Active;
@@ -41,12 +43,10 @@ const getStatus = (startDate: string, endDate?: string) => {
 
 const airdrops = RawAirdrops.map((d) => ({
   ...d,
-  startDate: new Date(d.startDate),
+  startDate: d.startDate ? new Date(d.startDate) : undefined,
   endDate: d.endDate ? new Date(d.endDate) : undefined,
   status: getStatus(d.startDate, d.endDate),
-})).sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
-
-console.log(airdrops);
+})).sort((a, b) => a.startDate?.getTime() - b.startDate?.getTime());
 
 const networks: string[] = [
   ...new Set(
@@ -59,15 +59,12 @@ const networks: string[] = [
 
 export function Table() {
   const [network, setNetwork] = useState<string | null>(null);
-  const [status, setStatus] = useState(Status.Upcoming);
+  const [status, setStatus] = useState([Status.Upcoming, Status.Active]);
 
   const filtered = airdrops.filter((d) => {
     const checks = [
       () => {
-        if (status === Status.All) {
-          return true;
-        }
-        return d.status === status;
+        return status.includes(d.status);
       },
       () => {
         if (!network) {
@@ -87,7 +84,7 @@ export function Table() {
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-              {capitalise(status.toString())}
+              {status.map(capitalise).join(", ")}
               <ChevronDownIcon
                 className="-mr-1 ml-2 h-5 w-5"
                 aria-hidden="true"
@@ -107,11 +104,20 @@ export function Table() {
             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
               <div className="py-1">
                 {Object.values(Status).map((s) => (
-                  <Menu.Item onClick={() => setStatus(s)} key={s}>
+                  <Menu.Item
+                    onClick={() =>
+                      setStatus((old) =>
+                        old.includes(s)
+                          ? old.filter((x) => x !== s)
+                          : [...old, s]
+                      )
+                    }
+                    key={s}
+                  >
                     {({ active }) => (
                       <a
                         className={classNames(
-                          s === status
+                          status.includes(s)
                             ? "bg-gray-100 text-gray-900 cursor-default"
                             : "text-gray-700 hover:cursor-pointer",
                           "group flex items-center px-4 py-2 text-sm"
@@ -234,13 +240,13 @@ export function Table() {
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
-                      Date
+                      Status
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
-                      Status
+                      Date
                     </th>
                     <th scope="col" className="relative px-6 py-3">
                       <span className="sr-only">Edit</span>
@@ -261,7 +267,10 @@ export function Table() {
                           </div>
                           <div className="ml-4">
                             <div className="text-sm font-medium text-gray-900">
-                              {capitalise(drop.network)}
+                              {drop.network
+                                .split("-")
+                                .map(capitalise)
+                                .join(" ")}
                             </div>
                             <div className="text-sm text-gray-500">
                               ${drop.token}
@@ -288,7 +297,9 @@ export function Table() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-gray-900">
-                          {drop.startDate.toDateString()}
+                          {drop.startDate
+                            ? drop.startDate.toDateString()
+                            : "Announced"}
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">

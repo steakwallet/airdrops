@@ -20,5 +20,55 @@
     "homeLink": "https://sunny.ag",
     "startDate": "08-01-2022",
     "endDate": "01-02-2022"
+  },
+  {
+    "network": "juno",
+    "token": "JUNO",
+    "homeLink": "https://junochain.com/",
+    "startDate": "01-10-2021"
+  },
+  {
+    "network": "persistence",
+    "token": "PSTAKE",
+    "homeLink": "https://pstake.finance/",
+    "claimLink": "https://airdrop.pstake.finance/"
+  },
+  {
+    "network": "desmos",
+    "token": "DSM",
+    "homeLink": "https://desmos.network/",
+    "claimLink": "https://airdrop.desmos.network/"
+  },
+  {
+    "network": "stargaze",
+    "token": "GAZE",
+    "homeLink": "https://stargaze.zone/",
+    "claimLink": "https://stargaze.zone/airdrop"
+  },
+  {
+    "network": "shade",
+    "token": "SHD"
+  },
+  {
+    "network": "secret",
+    "token": "SCRT"
+  },
+  {
+    "network": "sentinel",
+    "token": "DVPN"
+  },
+  {
+    "network": "comdex",
+    "token": "CMDX",
+    "claimLink": "https://airdrop.comdex.one/"
+  },
+  {
+    "network": "sputnik",
+    "token": "SPUTNIK"
+  },
+  {
+    "network": "cosmos-gaming-hub",
+    "token": "GAME",
+    "startDate": "01-01-2020"
   }
 ]
