@@ -159,7 +159,7 @@ export function Table() {
           <div>
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               {networks.length === 0
-                ? "Network"
+                ? "All Networks"
                 : networks.map(capitalise).join(", ")}
               <ChevronDownIcon
                 className="-mr-1 ml-2 h-5 w-5"
@@ -212,25 +212,6 @@ export function Table() {
                   </Menu.Item>
                 ))}
               </div>
-              {/* <div className="py-1">
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "group flex items-center px-4 py-2 text-sm"
-                      )}
-                    >
-                      <TrashIcon
-                        className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                        aria-hidden="true"
-                      />
-                      Delete
-                    </a>
-                  )}
-                </Menu.Item>
-              </div> */}
             </Menu.Items>
           </Transition>
         </Menu>
@@ -243,6 +224,10 @@ export function Table() {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    ></th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
@@ -268,7 +253,7 @@ export function Table() {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {filtered.map((drop) => (
-                    <tr key={`${drop.network}-${drop.token}`}>
+                    <tr key={`${drop.network}-${drop.symbol}`}>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
                           <div className="flex-shrink-0 h-10 w-10">
@@ -278,16 +263,16 @@ export function Table() {
                               alt=""
                             />
                           </div>
-                          <div className="ml-4">
-                            <div className="text-sm font-medium text-gray-900">
-                              {drop.network
-                                .split("-")
-                                .map(capitalise)
-                                .join(" ")}
-                            </div>
-                            <div className="text-sm text-gray-500">
-                              ${drop.token}
-                            </div>
+                        </div>
+                      </td>
+
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="flex-col items-center">
+                          <div className="text-sm font-medium text-gray-900">
+                            {drop.name}
+                          </div>
+                          <div className="text-sm text-gray-500">
+                            ${drop.symbol}
                           </div>
                         </div>
                       </td>
@@ -315,15 +300,30 @@ export function Table() {
                             : "Announced"}
                         </div>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <a
-                          href={drop.claimLink || drop.homeLink}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-indigo-600 hover:text-indigo-900"
-                        >
-                          Link
-                        </a>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-center ">
+                        {drop.status === Status.Active ? (
+                          <a
+                            href={drop.claimLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="bg-indigo-600 hover:bg-indigo-700 transition text-white rounded p-2"
+                          >
+                            <button>Claim now</button>
+                          </a>
+                        ) : drop.homeLink ? (
+                          <a
+                            href={drop.homeLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-indigo-600 hover:text-indigo-900 text-center"
+                          >
+                            See more
+                          </a>
+                        ) : (
+                          <span className="text-gray-700 text-center">
+                            Coming soon
+                          </span>
+                        )}
                       </td>
                     </tr>
                   ))}

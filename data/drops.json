@@ -1,14 +1,16 @@
 [
   {
     "network": "osmosis",
-    "token": "OSMO",
+    "name": "Osmosis",
+    "symbol": "OSMO",
     "homeLink": "https://osmosis.zone",
     "startDate": "01-01-2021",
     "endDate": "01-01-2022"
   },
   {
     "network": "ethereum",
-    "token": "ENS",
+    "name": "Ethereum Name Service",
+    "symbol": "ENS",
     "homeLink": "https://ens.domains",
     "claimLink": "https://claim.ens.domains",
     "startDate": "08-11-2021",
@@ -16,59 +18,69 @@
   },
   {
     "network": "solana",
-    "token": "SUNNY",
+    "name": "Sunny",
+    "symbol": "SUNNY",
     "homeLink": "https://sunny.ag",
     "startDate": "08-01-2022",
     "endDate": "01-02-2022"
   },
   {
     "network": "juno",
-    "token": "JUNO",
+    "name": "Juno",
+    "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
     "startDate": "01-10-2021"
   },
   {
     "network": "persistence",
-    "token": "PSTAKE",
+    "name": "Ethereum Name Service",
+    "symbol": "PSTAKE",
     "homeLink": "https://pstake.finance/",
     "claimLink": "https://airdrop.pstake.finance/"
   },
   {
     "network": "desmos",
-    "token": "DSM",
+    "name": "Desmos",
+    "symbol": "DSM",
     "homeLink": "https://desmos.network/",
     "claimLink": "https://airdrop.desmos.network/"
   },
   {
     "network": "stargaze",
-    "token": "GAZE",
+    "name": "Stargaze",
+    "symbol": "GAZE",
     "homeLink": "https://stargaze.zone/",
     "claimLink": "https://stargaze.zone/airdrop"
   },
   {
     "network": "shade",
-    "token": "SHD"
+    "name": "Shade",
+    "symbol": "SHD"
   },
   {
     "network": "secret",
-    "token": "SCRT"
+    "name": "Secret",
+    "symbol": "SCRT"
   },
   {
     "network": "sentinel",
-    "token": "DVPN"
+    "name": "Sentinel",
+    "symbol": "DVPN"
   },
   {
     "network": "comdex",
-    "token": "CMDX",
+    "name": "Comdex",
+    "symbol": "CMDX",
     "claimLink": "https://airdrop.comdex.one/"
   },
   {
     "network": "sputnik",
-    "token": "SPUTNIK"
+    "name": "Sputnik",
+    "symbol": "SPUTNIK"
   },
   {
     "network": "cosmos-gaming-hub",
-    "token": "GAME",
-    "startDate": "01-01-2020"
+    "name": "Game",
+    "symbol": "GAME"
   }
 ]
