@@ -14,14 +14,37 @@ export function Email() {
                   happens`}
                 </p>
               </div>
-              <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+
+              <form
+                action="https://steakwallet.us6.list-manage.com/subscribe/post?u=da67dab58b6db2d982767e334&amp;id=285a3fd370"
+                className="mt-12 sm:mx-auto sm:max-w-lg sm:flex"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank"
+                noValidate
+              >
+                {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+                <div
+                  style={{ position: "absolute", left: "-5000px" }}
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_da67dab58b6db2d982767e334_95f97e6dae"
+                    tabIndex={-1}
+                    value=""
+                  />
+                </div>
+
                 <div className="min-w-0 flex-1">
                   <label htmlFor="cta-email" className="sr-only">
                     Email address
                   </label>
                   <input
-                    id="cta-email"
                     type="email"
+                    name="EMAIL"
+                    id="mce-EMAIL"
                     className="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
                     placeholder="Enter your email"
                   />
@@ -29,6 +52,9 @@ export function Email() {
                 <div className="mt-4 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
                     className="block w-full rounded-md border border-transparent px-5 py-3 bg-white text-base font-medium text-pink-500 shadow hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10 transition"
                   >
                     Notify me
