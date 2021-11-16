@@ -4,6 +4,7 @@
     "name": "Osmosis",
     "symbol": "OSMO",
     "homeLink": "https://osmosis.zone",
+    "claimLink": "https://app.osmosis.zone/airdrop",
     "startDate": "01-01-2021",
     "endDate": "01-01-2022"
   },
@@ -21,36 +22,34 @@
     "name": "Sunny",
     "symbol": "SUNNY",
     "homeLink": "https://sunny.ag",
-    "startDate": "08-01-2022",
-    "endDate": "01-02-2022"
+    "claimLink": "https://airdrop.sunny.ag/",
+    "startDate": "01-01-2022"
   },
   {
     "network": "juno",
     "name": "Juno",
     "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
-    "startDate": "01-10-2021"
+    "startDate": "01-10-2021",
+    "endDate": "02-10-2021"
   },
   {
     "network": "persistence",
     "name": "Ethereum Name Service",
     "symbol": "PSTAKE",
-    "homeLink": "https://pstake.finance/",
-    "claimLink": "https://airdrop.pstake.finance/"
+    "homeLink": "https://airdrop.pstake.finance/"
   },
   {
     "network": "desmos",
     "name": "Desmos",
     "symbol": "DSM",
-    "homeLink": "https://desmos.network/",
-    "claimLink": "https://airdrop.desmos.network/"
+    "homeLink": "https://airdrop.desmos.network/"
   },
   {
     "network": "stargaze",
     "name": "Stargaze",
     "symbol": "GAZE",
-    "homeLink": "https://stargaze.zone/",
-    "claimLink": "https://stargaze.zone/airdrop"
+    "homeLink": "https://stargaze.zone/airdrop"
   },
   {
     "network": "shade",
