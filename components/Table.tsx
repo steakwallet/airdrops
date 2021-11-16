@@ -1,20 +1,9 @@
-import { Fragment, useState } from "react";
-import Image from "next/image";
 import { Menu, Transition } from "@headlessui/react";
-import {
-  ArchiveIcon,
-  ArrowCircleRightIcon,
-  ChevronDownIcon,
-  DuplicateIcon,
-  HeartIcon,
-  PencilAltIcon,
-  TrashIcon,
-  UserAddIcon,
-} from "@heroicons/react/solid";
-import { capitalise, classNames } from "../utils";
-import { Airdrop } from "../interfaces";
-
+import { ChevronDownIcon } from "@heroicons/react/solid";
+import Image from "next/image";
+import { Fragment, useState } from "react";
 import RawAirdrops from "../data/drops.json";
+import { capitalise, classNames } from "../utils";
 
 const now = Date.now();
 
@@ -47,7 +36,12 @@ const airdrops = RawAirdrops.map((d) => ({
   startDate: d.startDate ? new Date(d.startDate) : undefined,
   endDate: d.endDate ? new Date(d.endDate) : undefined,
   status: getStatus(d.startDate, d.endDate),
-})).sort((a, b) => a.startDate?.getTime() - b.startDate?.getTime());
+})).sort(
+  (a, b) =>
+    (a.startDate?.getTime() || Infinity) - (b.startDate?.getTime() || Infinity)
+);
+
+console.log(airdrops.map((a) => a.startDate));
 
 const allNetworks: string[] = [
   ...new Set(
@@ -246,9 +240,6 @@ export function Table() {
                     >
                       Date
                     </th>
-                    <th scope="col" className="relative px-6 py-3">
-                      <span className="sr-only">Edit</span>
-                    </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
@@ -306,23 +297,28 @@ export function Table() {
                             href={drop.claimLink}
                             target="_blank"
                             rel="noreferrer"
-                            className="bg-indigo-600 hover:bg-indigo-700 transition text-white rounded p-2"
+                            className="bg-pink-500 hover:bg-pink-600 transition text-white rounded px-4 py-2"
                           >
                             <button>Claim now</button>
                           </a>
-                        ) : drop.homeLink ? (
+                        ) : drop.announcementLink ? (
                           <a
-                            href={drop.homeLink}
+                            href={drop.announcementLink}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-indigo-600 hover:text-indigo-900 text-center"
+                            className="text-pink-600 hover:text-pink-700 text-center"
                           >
                             See more
                           </a>
                         ) : (
-                          <span className="text-gray-700 text-center">
+                          <a
+                            href={drop.homeLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
                             Coming soon
-                          </span>
+                          </a>
                         )}
                       </td>
                     </tr>

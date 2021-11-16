@@ -3,7 +3,7 @@ export function Email() {
     <div className="bg-white">
       <div className="relative py-8">
         <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="relative rounded-2xl px-6 py-10 bg-gradient-to-r from-pink to-light-pink overflow-hidden shadow-xl sm:px-12 sm:py-20">
+          <div className="relative rounded-2xl px-6 py-10 bg-gradient-to-r from-pink-400 to-pink-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
             <div className="relative">
               <div className="sm:text-center">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
@@ -29,7 +29,7 @@ export function Email() {
                 <div className="mt-4 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
-                    className="block w-full rounded-md border border-transparent px-5 py-3 bg-white text-base font-medium text-pink shadow hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10 transition"
+                    className="block w-full rounded-md border border-transparent px-5 py-3 bg-white text-base font-medium text-pink-500 shadow hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10 transition"
                   >
                     Notify me
                   </button>
