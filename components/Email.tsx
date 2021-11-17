@@ -63,7 +63,7 @@ export function Email() {
               </form>
               <div className="flex items-center justify-center pt-8">
                 <a
-                  href="https://github.com/AlexBHarley/airdrops/issues/new/choose"
+                  href="https://github.com/steakwallet/airdrops/issues/new/choose"
                   target="_blank"
                   rel="noreferrer"
                   className="text-white underline"
