@@ -198,6 +198,7 @@ export function Table() {
                           src={`/images/${n}.png`}
                           width={20}
                           height={20}
+                          className="rounded-full"
                         />
                         <span>{capitalise(n)}</span>
                       </a>
