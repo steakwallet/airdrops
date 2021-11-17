@@ -2,7 +2,7 @@ export function Email() {
   return (
     <div className="bg-white">
       <div className="relative py-8">
-        <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl px-4 md:px-0">
           <div className="relative rounded-2xl px-6 py-10 bg-gradient-to-r from-pink-400 to-pink-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
             <div className="relative">
               <div className="sm:text-center">
