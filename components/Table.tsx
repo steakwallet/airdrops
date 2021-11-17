@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import RawAirdrops from "../data/drops.json";
 import { capitalise, classNames } from "../utils";
+import { FallbackImage } from "./FallbackImage";
 
 const now = Date.now();
 
@@ -40,8 +41,6 @@ const airdrops = RawAirdrops.map((d) => ({
   (a, b) =>
     (a.startDate?.getTime() || Infinity) - (b.startDate?.getTime() || Infinity)
 );
-
-console.log(airdrops.map((a) => a.startDate));
 
 const allNetworks: string[] = [
   ...new Set(
@@ -221,12 +220,8 @@ export function Table() {
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    ></th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
-                      Name
+                      Project
                     </th>
                     <th
                       scope="col"
@@ -246,24 +241,27 @@ export function Table() {
                   {filtered.map((drop) => (
                     <tr key={`${drop.network}-${drop.symbol}`}>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          <div className="flex-shrink-0 h-10 w-10">
-                            <img
-                              className="h-10 w-10 rounded-full"
-                              src={`/images/${drop.network}.png`}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </td>
-
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex-col items-center">
-                          <div className="text-sm font-medium text-gray-900">
-                            {drop.name}
-                          </div>
-                          <div className="text-sm text-gray-500">
-                            ${drop.symbol}
+                        <div className="flex items-center space-x-6">
+                          <FallbackImage
+                            className="h-10 w-10 rounded-full"
+                            src={`/images/${drop.symbol.toLowerCase()}.png`}
+                            fallbackSrc={`/images/${drop.network}.png`}
+                            height={32}
+                            width={32}
+                          />
+                          <div className="flex-col items-center">
+                            <div className="flex items-center space-x-2">
+                              <div className="text-sm font-medium text-gray-900">
+                                {drop.name}
+                              </div>
+                              <img
+                                src={`/images/${drop.network}.png`}
+                                className="h-4 w-4 rounded-full"
+                              />
+                            </div>
+                            <span className="text-sm font-medium text-gray-500">
+                              ${drop.symbol}
+                            </span>
                           </div>
                         </div>
                       </td>
