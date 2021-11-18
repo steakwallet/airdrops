@@ -117,5 +117,13 @@
     "homeLink": "https://paraswap.io/#/?network=ethereum",
     "claimLink": "https://paraswap.io/#/?network=ethereum",
     "announcementLink": "https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72"
+  },
+  {
+    "network": "ethereum",
+    "name": "Saddle Finance",
+    "homeLink": "https://saddle.finance/#/",
+    "startDate": "11-16-2021",
+    "claimLink": "https://saddle.exchange/#/",
+    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/"
   }
 ]
