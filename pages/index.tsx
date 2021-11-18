@@ -1,6 +1,5 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
-import { Table, Email, Footer } from "../components";
 import Image from "next/image";
+import { Email, Footer, Table } from "../components";
 
 function App() {
   return (
