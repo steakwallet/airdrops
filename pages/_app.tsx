@@ -15,6 +15,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Steakwallet" />
 
         <title>Web3 Airdrops</title>
+
+        <script
+          defer
+          data-domain="steakwallet.fi"
+          src="https://plausible.io/js/plausible.js"
+        />
       </Head>
       <Component {...pageProps} />
     </>
