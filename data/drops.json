@@ -121,6 +121,7 @@
   {
     "network": "ethereum",
     "name": "Saddle Finance",
+    "symbol": "SDL",
     "homeLink": "https://saddle.finance/#/",
     "startDate": "11-16-2021",
     "claimLink": "https://saddle.exchange/#/",
