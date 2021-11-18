@@ -48,7 +48,9 @@
     "network": "lum",
     "name": "Lum Network",
     "symbol": "LUM",
-    "announcementLink": "https://medium.com/lum-network/lum-token-distribution-launch-schedule-95e2a2ff68a6"
+    "announcementLink": "https://medium.com/lum-network/lum-token-distribution-launch-schedule-95e2a2ff68a6",
+    "claimLink": "https://airdrop.lum.network/",
+    "homeLink": "https://lum.network"
   },
   {
     "network": "desmos",
@@ -107,7 +109,9 @@
   {
     "network": "cosmos-gaming-hub",
     "name": "Game",
-    "symbol": "GAME"
+    "symbol": "GAME",
+    "claimLink": "https://airdrop.gamenet.one",
+    "homeLink": "https://gamenet.one/"
   },
   {
     "network": "ethereum",

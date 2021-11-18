@@ -7,22 +7,22 @@ assignees: AlexBHarley
 ---
 
 **Project**
-Osmosis
+Project name, e.g. Osmosis
 
 **Token Name**
-$OSMO
+Name of the token being airdropped, e.g. $OSMO
 
 **Start Date**
-01/02/2021
+MM-DD-YYYY
 
 **End Date**
-01/02/2022 (optional)
+MM-DD-YYYY (optional)
 
 **Home Link**
-https://osmosis.zone
+Home page of the project, e.g. https://osmosis.zone
 
 **Claim Link**
-https://app.osmosis.zone/airdrop
+Link to website where you can claim or check your allocation, e.g.https://app.osmosis.zone/airdrop
 
 **Announcement Post**
-E.g. https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72
+Link to a website announcing the airdrop, e.g. https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72
