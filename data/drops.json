@@ -25,7 +25,7 @@
     "homeLink": "https://sunny.ag",
     "claimLink": "https://airdrop.sunny.ag/",
     "announcementLink": "https://medium.com/sunny-aggregator/sunny-announces-airdrop-to-osmosis-osmo-holders-6e787c4502ac",
-    "startDate": "2022-01-01"
+    "startDate": "2021-11-01"
   },
   {
     "network": "juno",
@@ -33,8 +33,7 @@
     "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
     "announcementLink": "https://medium.com/@JunoNetwork/jun%C3%B8-stakedrop-stake-junohack-and-prep-for-genesis-9f345fcf4e80",
-    "startDate": "2021-10-01",
-    "endDate": "2021-10-02"
+    "startDate": "2021-10-01"
   },
   {
     "network": "persistence",
