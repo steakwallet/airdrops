@@ -87,11 +87,11 @@ export function Table() {
         return networks.includes(d.network);
       },
       () => {
-          if (ecosystem) {
-            return d.ecosystem === ecosystem;
-          }
+        if (ecosystem) {
+          return d.ecosystem === ecosystem;
+        }
           
-          return true;
+        return true;
       }
     ];
 
