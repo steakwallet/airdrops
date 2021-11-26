@@ -7,7 +7,8 @@
     "claimLink": "https://app.osmosis.zone/airdrop",
     "announcementLink": "https://medium.com/osmosis/osmo-token-distribution-ae27ea2bb4db",
     "startDate": "2021-01-01",
-    "endDate": "2022-01-01"
+    "endDate": "2022-01-01",
+    "ecosystem": "cosmos"
   },
   {
     "network": "ethereum",
