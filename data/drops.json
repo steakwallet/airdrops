@@ -17,7 +17,8 @@
     "homeLink": "https://ens.domains",
     "claimLink": "https://claim.ens.domains",
     "startDate": "2021-11-08",
-    "endDate": "2022-05-01"
+    "endDate": "2022-05-01",
+    "ecosystem": "ethereum"
   },
   {
     "network": "solana",
@@ -26,7 +27,8 @@
     "homeLink": "https://sunny.ag",
     "claimLink": "https://airdrop.sunny.ag/",
     "announcementLink": "https://medium.com/sunny-aggregator/sunny-announces-airdrop-to-osmosis-osmo-holders-6e787c4502ac",
-    "startDate": "2021-11-01"
+    "startDate": "2021-11-01",
+    "ecosystem": "solana"
   },
   {
     "network": "juno",
@@ -34,7 +36,8 @@
     "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
     "announcementLink": "https://medium.com/@JunoNetwork/jun%C3%B8-stakedrop-stake-junohack-and-prep-for-genesis-9f345fcf4e80",
-    "startDate": "2021-10-01"
+    "startDate": "2021-10-01",
+    "ecosystem": "cosmos"
   },
   {
     "network": "persistence",
@@ -43,7 +46,8 @@
     "homeLink": "https://airdrop.pstake.finance/",
     "claimLink": "https://airdrop.pstake.finance/",
     "announcementLink": "https://medium.com/persistence-blog/pos-token-holders-prepare-yourselves-for-persistence-stakedrop-the-grand-unveiling-d5f6ca6ddc40",
-    "startDate": "2021-09-02"
+    "startDate": "2021-09-02",
+    "ecosystem": "cosmos"
   },
   {
     "network": "lum",
@@ -51,21 +55,24 @@
     "symbol": "LUM",
     "announcementLink": "https://medium.com/lum-network/lum-token-distribution-launch-schedule-95e2a2ff68a6",
     "claimLink": "https://airdrop.lum.network/",
-    "homeLink": "https://lum.network"
+    "homeLink": "https://lum.network",
+    "ecosystem": "cosmos"
   },
   {
     "network": "desmos",
     "name": "Desmos",
     "symbol": "DSM",
     "homeLink": "https://airdrop.desmos.network/",
-    "announcementLink": "https://medium.com/desmosnetwork/announcing-dsm-airdrop-to-the-interchain-community-39d9837dcc5c"
+    "announcementLink": "https://medium.com/desmosnetwork/announcing-dsm-airdrop-to-the-interchain-community-39d9837dcc5c",
+    "ecosystem": "cosmos"
   },
   {
     "network": "stargaze",
     "name": "Stargaze",
     "symbol": "GAZE",
     "homeLink": "https://stargaze.zone/airdrop",
-    "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y"
+    "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y",
+    "ecosystem": "cosmos"
   },
   {
     "network": "shade",
@@ -93,26 +100,30 @@
   {
     "network": "sentinel",
     "name": "Sentinel",
-    "symbol": "DVPN"
+    "symbol": "DVPN",
+    "ecosystem": "cosmos"
   },
   {
     "network": "comdex",
     "name": "Comdex",
     "symbol": "CMDX",
     "claimLink": "https://airdrop.comdex.one/",
-    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e"
+    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e",
+    "ecosystem": "cosmos"
   },
   {
     "network": "sputnik",
     "name": "Sputnik",
-    "symbol": "SPUTNIK"
+    "symbol": "SPUTNIK",
+    "ecosystem": "cosmos"
   },
   {
     "network": "cosmos-gaming-hub",
     "name": "Game",
     "symbol": "GAME",
     "claimLink": "https://airdrop.gamenet.one",
-    "homeLink": "https://gamenet.one/"
+    "homeLink": "https://gamenet.one/",
+    "ecosystem": "cosmos"
   },
   {
     "network": "ethereum",
@@ -121,7 +132,8 @@
     "startDate": "2021-11-15",
     "homeLink": "https://paraswap.io/#/?network=ethereum",
     "claimLink": "https://paraswap.io/#/?network=ethereum",
-    "announcementLink": "https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72"
+    "announcementLink": "https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72",
+    "ecosystem": "ethereum"
   },
   {
     "network": "ethereum",
@@ -130,6 +142,7 @@
     "homeLink": "https://saddle.finance/#/",
     "startDate": "2021-11-16",
     "claimLink": "https://saddle.exchange/#/",
-    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/"
+    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/",
+    "ecosystem": "ethereum"
   }
 ]
