@@ -57,7 +57,8 @@
     "name": "Desmos",
     "symbol": "DSM",
     "homeLink": "https://airdrop.desmos.network/",
-    "announcementLink": "https://medium.com/desmosnetwork/announcing-dsm-airdrop-to-the-interchain-community-39d9837dcc5c"
+    "announcementLink": "https://medium.com/desmosnetwork/announcing-dsm-airdrop-to-the-interchain-community-39d9837dcc5c",
+    "startDate": "2021-11-25"
   },
   {
     "network": "stargaze",
@@ -130,5 +131,13 @@
     "startDate": "2021-11-16",
     "claimLink": "https://saddle.exchange/#/",
     "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/"
+  },
+  {
+    "network": "terra",
+    "name": "Astroport",
+    "symbol": "ASTRO",
+    "homeLink": "https://astroport.fi/",
+    "announcementLink": "https://astroport.medium.com/astrodrop-breaking-down-the-astro-token-launch-allocations-7976a64616f5",
+    "startDate": "2021-11-20"
   }
 ]
