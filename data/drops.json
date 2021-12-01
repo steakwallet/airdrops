@@ -148,7 +148,8 @@
     "homeLink": "https://saddle.finance/#/",
     "startDate": "2021-11-16",
     "claimLink": "https://saddle.exchange/#/",
-    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/"
+    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/",
+    "ecosystems": ["ethereum"]
   },
   {
     "network": "terra",
