@@ -7,7 +7,8 @@
     "claimLink": "https://app.osmosis.zone/airdrop",
     "announcementLink": "https://medium.com/osmosis/osmo-token-distribution-ae27ea2bb4db",
     "startDate": "2021-01-01",
-    "endDate": "2022-01-01"
+    "endDate": "2022-01-01",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "ethereum",
@@ -16,7 +17,8 @@
     "homeLink": "https://ens.domains",
     "claimLink": "https://claim.ens.domains",
     "startDate": "2021-11-08",
-    "endDate": "2022-05-01"
+    "endDate": "2022-05-01",
+    "ecosystems": ["ethereum"]
   },
   {
     "network": "solana",
@@ -25,7 +27,8 @@
     "homeLink": "https://sunny.ag",
     "claimLink": "https://airdrop.sunny.ag/",
     "announcementLink": "https://medium.com/sunny-aggregator/sunny-announces-airdrop-to-osmosis-osmo-holders-6e787c4502ac",
-    "startDate": "2021-11-01"
+    "startDate": "2021-11-01",
+    "ecosystems": ["solana", "cosmos"]
   },
   {
     "network": "juno",
@@ -33,7 +36,8 @@
     "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
     "announcementLink": "https://medium.com/@JunoNetwork/jun%C3%B8-stakedrop-stake-junohack-and-prep-for-genesis-9f345fcf4e80",
-    "startDate": "2021-10-01"
+    "startDate": "2021-10-01",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "persistence",
@@ -42,7 +46,8 @@
     "homeLink": "https://airdrop.pstake.finance/",
     "claimLink": "https://airdrop.pstake.finance/",
     "announcementLink": "https://medium.com/persistence-blog/pos-token-holders-prepare-yourselves-for-persistence-stakedrop-the-grand-unveiling-d5f6ca6ddc40",
-    "startDate": "2021-09-02"
+    "startDate": "2021-09-02",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "lum",
@@ -50,7 +55,8 @@
     "symbol": "LUM",
     "announcementLink": "https://medium.com/lum-network/lum-token-distribution-launch-schedule-95e2a2ff68a6",
     "claimLink": "https://airdrop.lum.network/",
-    "homeLink": "https://lum.network"
+    "homeLink": "https://lum.network",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "desmos",
@@ -58,61 +64,72 @@
     "symbol": "DSM",
     "homeLink": "https://airdrop.desmos.network/",
     "announcementLink": "https://medium.com/desmosnetwork/announcing-dsm-airdrop-to-the-interchain-community-39d9837dcc5c",
-    "startDate": "2021-11-25"
+    "startDate": "2021-11-25",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "stargaze",
     "name": "Stargaze",
     "symbol": "GAZE",
     "homeLink": "https://stargaze.zone/airdrop",
-    "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y"
+    "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "shade",
     "name": "Shade",
     "symbol": "SHD",
-    "announcementLink": "https://medium.com/@shadeprotocoldevs/shade-protocol-snapshot-details-5fcc99aa923c"
+    "announcementLink": "https://medium.com/@shadeprotocoldevs/shade-protocol-snapshot-details-5fcc99aa923c",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "sommelier",
     "name": "Sommelier Finance",
     "symbol": "SOMM",
-    "announcementLink": "https://community.sommelier.finance/t/sips-002-a-proposal-for-a-sommelier-token-airdrop-of-somm-to-select-liquidity-providers/272"
+    "announcementLink": "https://community.sommelier.finance/t/sips-002-a-proposal-for-a-sommelier-token-airdrop-of-somm-to-select-liquidity-providers/272",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "mobix",
     "name": "Mobix",
     "symbol": "MOBIX",
-    "announcementLink": "https://mobix.ai/2021/10/20/how-to-participate-in-the-mobix-stakedrop/"
+    "announcementLink": "https://mobix.ai/2021/10/20/how-to-participate-in-the-mobix-stakedrop/",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "secret",
-    "name": "Secret",
-    "symbol": "SCRT"
+    "name": "SecretSwap",
+    "symbol": "SEFI",
+    "announcementLink": "https://scrt.network/blog/sefi-governance-token-for-secret-defi",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "sentinel",
     "name": "Sentinel",
-    "symbol": "DVPN"
+    "symbol": "DVPN",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "comdex",
     "name": "Comdex",
     "symbol": "CMDX",
     "claimLink": "https://airdrop.comdex.one/",
-    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e"
+    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "sputnik",
     "name": "Sputnik",
-    "symbol": "SPUTNIK"
+    "symbol": "SPUTNIK",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "cosmos-gaming-hub",
     "name": "Game",
     "symbol": "GAME",
     "claimLink": "https://airdrop.gamenet.one",
-    "homeLink": "https://gamenet.one/"
+    "homeLink": "https://gamenet.one/",
+    "ecosystems": ["cosmos"]
   },
   {
     "network": "ethereum",
@@ -121,7 +138,8 @@
     "startDate": "2021-11-15",
     "homeLink": "https://paraswap.io/#/?network=ethereum",
     "claimLink": "https://paraswap.io/#/?network=ethereum",
-    "announcementLink": "https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72"
+    "announcementLink": "https://medium.com/paraswap/introducing-the-psp-token-to-make-paraswap-even-more-efficient-and-decentralized-c4730e50be72",
+    "ecosystems": ["ethereum"]
   },
   {
     "network": "ethereum",
@@ -130,7 +148,8 @@
     "homeLink": "https://saddle.finance/#/",
     "startDate": "2021-11-16",
     "claimLink": "https://saddle.exchange/#/",
-    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/"
+    "announcementLink": "https://blog.saddle.finance/announcing-the-saddle-sdl-token/",
+    "ecosystems": ["ethereum"]
   },
   {
     "network": "terra",
@@ -138,6 +157,7 @@
     "symbol": "ASTRO",
     "homeLink": "https://astroport.fi/",
     "announcementLink": "https://astroport.medium.com/astrodrop-breaking-down-the-astro-token-launch-allocations-7976a64616f5",
-    "startDate": "2021-11-20"
+    "startDate": "2021-11-20",
+    "ecosystems": ["ethereum"]
   }
 ]
