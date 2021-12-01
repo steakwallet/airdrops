@@ -9,6 +9,9 @@ assignees: AlexBHarley
 **Project**
 Project name, e.g. Osmosis
 
+**Ecosystem**
+What family of blockchains the project belongs to, e.g. Cosmos
+
 **Token Name**
 Name of the token being airdropped, e.g. $OSMO
 

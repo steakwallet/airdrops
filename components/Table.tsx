@@ -1,12 +1,8 @@
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
-import Image from "next/image";
-import { Fragment, useState } from "react";
+import { useState } from "react";
+import { MultipleValueFilter, SingleValueFilter } from ".";
 import RawAirdrops from "../data/drops.json";
-import { capitalise, classNames } from "../utils";
+import { capitalise } from "../utils";
 import { FallbackImage } from "./FallbackImage";
-import MultipleValueFilter from "./MultipleValueFilter";
-import SingleValueFilter from "./SingleValueFilter";
 
 const now = Date.now();
 
@@ -39,7 +35,6 @@ const airdrops = RawAirdrops.map((d) => ({
   startDate: d.startDate ? new Date(d.startDate) : undefined,
   endDate: d.endDate ? new Date(d.endDate) : undefined,
   status: getStatus(d.startDate, d.endDate),
-  ecosystem: d.ecosystem ? d.ecosystem : null
 })).sort(
   (a, b) =>
     (a.startDate?.getTime() || Infinity) - (b.startDate?.getTime() || Infinity)
@@ -55,19 +50,14 @@ const allNetworks: string[] = [
 ];
 
 const allEcosystems: string[] = [
-    ...new Set(
-      Object.values(airdrops).reduce(
-        (accum: string[], drop) => {
-          if (drop.ecosystem) {
-            return [...accum, drop.ecosystem];
-          } else {
-            return [...accum]
-          }
-        },
-        []
-      )
-    ),
-  ];
+  ...new Set(
+    Object.values(airdrops).reduce(
+      (accum: string[], drop) =>
+        drop.ecosystems ? [...accum, ...drop.ecosystems] : accum,
+      []
+    )
+  ),
+];
 
 export function Table() {
   const [networks, setNetworks] = useState<string[]>([]);
@@ -87,23 +77,41 @@ export function Table() {
         return networks.includes(d.network);
       },
       () => {
-        if (ecosystem) {
-          return d.ecosystem === ecosystem;
+        if (!ecosystem) {
+          return true;
         }
-          
-        return true;
-      }
+
+        return d.ecosystems.includes(ecosystem);
+      },
     ];
 
     return checks.every((fn) => fn());
   });
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" style={{ minHeight: "50vh" }}>
       <div className="flex justify-end space-x-4">
-        <SingleValueFilter value={ecosystem} setValue={setEcosystem} allValues={allEcosystems} defaultText="All Ecosystems" useImg={true}/>
-        <MultipleValueFilter values={networks} setValues={setNetworks} allValues={allNetworks} defaultText="All Networks" useImg={true} />
-        <MultipleValueFilter values={status} setValues={setStatus} allValues={Object.values(Status)} defaultText="Select Status" useImg={false} />
+        <SingleValueFilter
+          value={ecosystem}
+          setValue={setEcosystem}
+          allValues={allEcosystems}
+          defaultText="All Ecosystems"
+          useImg={true}
+        />
+        <MultipleValueFilter
+          values={networks}
+          setValues={setNetworks}
+          allValues={allNetworks}
+          defaultText="All Networks"
+          useImg={true}
+        />
+        <MultipleValueFilter
+          values={status}
+          setValues={setStatus}
+          allValues={Object.values(Status)}
+          defaultText="Select Status"
+          useImg={false}
+        />
       </div>
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
