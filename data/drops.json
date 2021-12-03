@@ -159,7 +159,17 @@
     "symbol": "ASTRO",
     "homeLink": "https://astroport.fi/",
     "announcementLink": "https://astroport.medium.com/astrodrop-breaking-down-the-astro-token-launch-allocations-7976a64616f5",
-    "startDate": "2021-20-11",
+    "startDate": "2021-11-20",
+    "ecosystems": ["ethereum"]
+  },
+  {
+    "network": "ethereum",
+    "name": "Diversifi",
+    "symbol": "DVF",
+    "startDate": "2021-12-02",
+    "homeLink": "https://deversifi.com",
+    "claimLink": "https://app.deversifi.com/swap?symbol=ETH:USDT",
+    "announcementLink": "https://deversifi.com/blog/clarifying-the-dvf-airdrop-methodology",
     "ecosystems": ["ethereum"]
   }
 ]
