@@ -16,11 +16,15 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/jest": "^27.0.3",
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
     "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
+    "jest": "^27.4.5",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"

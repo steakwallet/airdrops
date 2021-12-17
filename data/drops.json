@@ -16,6 +16,7 @@
     "symbol": "ENS",
     "homeLink": "https://ens.domains",
     "claimLink": "https://claim.ens.domains",
+    "announcementLink": "https://ens.mirror.xyz/5cGl-Y37aTxtokdWk21qlULmE1aSM_NuX9fstbOPoWU",
     "startDate": "2021-11-08",
     "endDate": "2022-05-01",
     "ecosystems": ["ethereum"]
@@ -36,6 +37,7 @@
     "symbol": "JUNO",
     "homeLink": "https://junochain.com/",
     "announcementLink": "https://medium.com/@JunoNetwork/jun%C3%B8-stakedrop-stake-junohack-and-prep-for-genesis-9f345fcf4e80",
+    "claimLink": "https://stakedrop.junochain.com/",
     "startDate": "2021-10-01",
     "ecosystems": ["cosmos"]
   },
@@ -81,6 +83,7 @@
     "network": "shade",
     "name": "Shade",
     "symbol": "SHD",
+    "homeLink": "https://shadeprotocol.io/",
     "announcementLink": "https://medium.com/@shadeprotocoldevs/shade-protocol-snapshot-details-5fcc99aa923c",
     "ecosystems": ["cosmos"]
   },
@@ -88,6 +91,7 @@
     "network": "sommelier",
     "name": "Sommelier Finance",
     "symbol": "SOMM",
+    "homeLink": "https://sommelier.finance/",
     "announcementLink": "https://community.sommelier.finance/t/sips-002-a-proposal-for-a-sommelier-token-airdrop-of-somm-to-select-liquidity-providers/272",
     "ecosystems": ["cosmos"]
   },
@@ -95,6 +99,7 @@
     "network": "mobix",
     "name": "Mobix",
     "symbol": "MOBIX",
+    "homeLink": "https://mobix.ai/",
     "announcementLink": "https://mobix.ai/2021/10/20/how-to-participate-in-the-mobix-stakedrop/",
     "ecosystems": ["cosmos"]
   },
@@ -102,13 +107,8 @@
     "network": "secret",
     "name": "SecretSwap",
     "symbol": "SEFI",
+    "homeLink": "https://scrt.network/",
     "announcementLink": "https://scrt.network/blog/sefi-governance-token-for-secret-defi",
-    "ecosystems": ["cosmos"]
-  },
-  {
-    "network": "sentinel",
-    "name": "Sentinel",
-    "symbol": "DVPN",
     "ecosystems": ["cosmos"]
   },
   {
@@ -116,13 +116,9 @@
     "name": "Comdex",
     "symbol": "CMDX",
     "claimLink": "https://airdrop.comdex.one/",
-    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e",
-    "ecosystems": ["cosmos"]
-  },
-  {
-    "network": "sputnik",
-    "name": "Sputnik",
-    "symbol": "SPUTNIK",
+    "startDate": "2021-12-09",
+    "homeLink": "https://comdex.one/home",
+    "announcementLink": "https://blog.comdex.one/how-to-claim-your-cmdx-airdrop-47873917e10",
     "ecosystems": ["cosmos"]
   },
   {
@@ -130,6 +126,7 @@
     "name": "Game",
     "symbol": "GAME",
     "claimLink": "https://airdrop.gamenet.one",
+    "announcementLink": "https://medium.com/game/game-airdrop-for-atom-holder-563336c5f32e",
     "homeLink": "https://gamenet.one/",
     "ecosystems": ["cosmos"]
   },
@@ -159,7 +156,8 @@
     "symbol": "ASTRO",
     "homeLink": "https://astroport.fi/",
     "announcementLink": "https://astroport.medium.com/astrodrop-breaking-down-the-astro-token-launch-allocations-7976a64616f5",
-    "startDate": "2021-11-20",
+    "claimLink": "https://lockdrop.astroport.fi/",
+    "startDate": "2021-12-28",
     "ecosystems": ["ethereum"]
   },
   {
