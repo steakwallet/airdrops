@@ -56,9 +56,10 @@
     "name": "Lum Network",
     "symbol": "LUM",
     "announcementLink": "https://medium.com/lum-network/lum-token-distribution-launch-schedule-95e2a2ff68a6",
-    "claimLink": "https://airdrop.lum.network/",
+    "claimLink": "https://wallet.lum.network/welcome/",
     "homeLink": "https://lum.network",
-    "ecosystems": ["cosmos"]
+    "ecosystems": ["cosmos"],
+    "startDate": "2021-12-15"
   },
   {
     "network": "desmos",
@@ -74,7 +75,7 @@
   {
     "network": "stargaze",
     "name": "Stargaze",
-    "symbol": "GAZE",
+    "symbol": "STARS",
     "homeLink": "https://stargaze.zone/airdrop",
     "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y",
     "ecosystems": ["cosmos"]
@@ -169,5 +170,63 @@
     "claimLink": "https://app.deversifi.com/swap?symbol=ETH:USDT",
     "announcementLink": "https://deversifi.com/blog/clarifying-the-dvf-airdrop-methodology",
     "ecosystems": ["ethereum"]
+  },
+
+  {
+    "network": "juno",
+    "name": "Neta",
+    "symbol": "NETA",
+    "startDate": "2022-02-01",
+    "endDate": "2022-02-31",
+    "homeLink": "https://www.neta.money/",
+    "announcementLink": "https://www.neta.money/NETA_Money.pdf",
+    "ecosystems": ["cosmos"]
+  },
+  {
+    "network": "chihuahua",
+    "name": "Chihuahua",
+    "symbol": "HUAHUA",
+    "startDate": "2021-12-15",
+    "homeLink": "https://chi.huahua.wtf/",
+    "claimLink": "https://omniflix.chihuahua.wtf/",
+    "announcementLink": "https://twitter.com/ChihuahuaChain/status/1470731288806047747",
+    "ecosystems": ["cosmos"]
+  },
+  {
+    "network": "evmos",
+    "name": "Evmos",
+    "symbol": "EVMOS",
+    "startDate": "2022-01-15",
+    "homeLink": "https://evmos.org/",
+    "announcementLink": "https://evmos.blog/the-evmos-rektdrop-abbe931ba823",
+    "ecosystems": ["cosmos", "ethereum"]
+  },
+  {
+    "network": "bitsong",
+    "name": "BitSong",
+    "symbol": "BTSG",
+    "startDate": "2021-12-29",
+    "homeLink": "https://bitsong.io/",
+    "announcementLink": "https://twitter.com/bitangel84/status/1473734182685884429",
+    "claimLink": "https://twitter.com/bitangel84/status/1473734182685884429",
+    "ecosystems": ["cosmos"]
+  },
+  {
+    "network": "likecoin",
+    "name": "LikeCoin",
+    "symbol": "LIKE",
+    "startDate": "2021-12-08",
+    "homeLink": "https://about.like.co/",
+    "announcementLink": "https://stake.like.co/proposals/25",
+    "claimLink": "https://stake.like.co/welcome/",
+    "ecosystems": ["cosmos"]
+  },
+  {
+    "network": "avalanche",
+    "name": "DeFi Kingdoms",
+    "symbol": "CRYSTAL",
+    "announcementLink": "https://medium.com/@Samichpunch/defi-kingdoms-expansion-to-avalanche-crystal-airdrops-and-gleading-up-to-expansion-c78d9be01140",
+    "homeLink": "https://defikingdoms.com/",
+    "ecosystems": ["avalanche"]
   }
 ]

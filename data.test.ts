@@ -1,3 +1,4 @@
+import fs from "fs";
 import drops from "./data/drops.json";
 
 const NOW = new Date();
@@ -23,6 +24,13 @@ function verify(drop: any) {
     !drop.claimLink
   ) {
     return "Invalid claim link";
+  }
+
+  if (
+    !fs.existsSync(`./public/images/${drop.symbol.toLowerCase()}.png`) &&
+    !fs.existsSync(`./public/images/${drop.network.toLowerCase()}.png`)
+  ) {
+    return "Missing image";
   }
 
   return true;
