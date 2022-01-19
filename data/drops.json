@@ -228,5 +228,13 @@
     "announcementLink": "https://medium.com/@Samichpunch/defi-kingdoms-expansion-to-avalanche-crystal-airdrops-and-gleading-up-to-expansion-c78d9be01140",
     "homeLink": "https://defikingdoms.com/",
     "ecosystems": ["avalanche"]
+  },
+  {
+    "network": "omniflix",
+    "name": "OmniFlix Network",
+    "symbol": "FLIX",
+    "announcementLink": "https://blog.omniflix.network/omniflix-network-community-update-33-c24f82adfd90",
+    "homeLink": "https://www.omniflix.network/",
+    "ecosystems": ["cosmos"]
   }
 ]
