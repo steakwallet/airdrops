@@ -196,7 +196,7 @@
     "network": "evmos",
     "name": "Evmos",
     "symbol": "EVMOS",
-    "startDate": "2022-01-15",
+    "startDate": "2022-01-25",
     "homeLink": "https://evmos.org/",
     "announcementLink": "https://evmos.blog/the-evmos-rektdrop-abbe931ba823",
     "ecosystems": ["cosmos", "ethereum"]
