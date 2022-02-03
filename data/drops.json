@@ -78,6 +78,8 @@
     "symbol": "STARS",
     "homeLink": "https://stargaze.zone/airdrop",
     "announcementLink": "https://mirror.xyz/stargazezone.eth/h9Bc7jODUrYB1Jw4mve3QEGVkBwBsyVebN6NP7tRl_Y",
+    "claimLink": "https://app.stargaze.zone/airdrop",
+    "startDate": "2021-01-16",
     "ecosystems": ["cosmos"]
   },
   {
@@ -179,6 +181,7 @@
     "startDate": "2022-02-01",
     "endDate": "2022-02-31",
     "homeLink": "https://www.neta.money/",
+    "claimLink": "https://neta.money/",
     "announcementLink": "https://www.neta.money/NETA_Money.pdf",
     "ecosystems": ["cosmos"]
   },
@@ -196,7 +199,7 @@
     "network": "evmos",
     "name": "Evmos",
     "symbol": "EVMOS",
-    "startDate": "2022-01-25",
+    "startDate": "2022-02-25",
     "homeLink": "https://evmos.org/",
     "announcementLink": "https://evmos.blog/the-evmos-rektdrop-abbe931ba823",
     "ecosystems": ["cosmos", "ethereum"]
