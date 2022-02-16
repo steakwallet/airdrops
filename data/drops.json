@@ -239,5 +239,13 @@
     "announcementLink": "https://blog.omniflix.network/omniflix-network-community-update-33-c24f82adfd90",
     "homeLink": "https://www.omniflix.network/",
     "ecosystems": ["cosmos"]
+  },
+  {
+    "network": "juno",
+    "name": "Raw",
+    "symbol": "Raw",
+    "homeLink": "https://junoswap.com/",
+    "announcementLink": "https://twitter.com/junoswapdex/status/1483513268278804487",
+    "ecosystems": ["cosmos"]
   }
 ]
