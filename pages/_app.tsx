@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <script
           defer
-          data-domain="steakwallet.fi"
+          data-domain="airdrops.steakwallet.fi"
           src="https://plausible.io/js/plausible.js"
         />
       </Head>
